@@ -20,7 +20,8 @@ gsap.from("#page2 main div", {
     scroller: "body",
     scrup: 1,
     // markers: true,
-    end: "top 50%",
+    start: "top 40%",
+    // end: "top 50%",
   },
 });
 
