@@ -2,6 +2,7 @@ body {
     overflow-x: hidden;
 }
 
+/* // npx tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --watch */
 html,
 body {
     width: 100%;
@@ -13,11 +14,11 @@ body {
     width: 100%;
 }
 
-#hero {
+/* #hero {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     border-radius: 5px;
     overflow: hidden;
-}
+} */

@@ -1,8 +1,17 @@
+const theme = localStorage.getItem("theme") || "cupcake";
+
+function setTheme(theme) {
+  localStorage.setItem("theme", theme);
+  document.querySelector("html").setAttribute("data-theme", theme);
+}
+setTheme(theme);
 document.querySelector("#checkbox").addEventListener("change", () => {
   if (document.querySelector("#checkbox").checked) {
     document.querySelector("html").setAttribute("data-theme", "dark");
+    setTheme("dark");
   } else {
     document.querySelector("html").setAttribute("data-theme", "cupcake");
+    setTheme("cupcake");
   }
 });
 gsap.from("#page1 #hero", {
@@ -29,6 +38,6 @@ var logo = gsap.timeline();
 
 logo.from("#logo span", {
   y: -50,
-  duration: 1,
-  stagger: 0.5,
+  duration: 0.5,
+  stagger: 0.09,
 });
